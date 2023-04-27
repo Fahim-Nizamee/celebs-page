@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* list-style: none; */
     text-decoration: none;
     color: rgb(0, 0, 0);
     scroll-behavior: smooth;
@@ -95,7 +94,6 @@ header {
     display: none;
     position: absolute;
     right: 50px;
-    /* top: 50px; */
     width: 35px;
 }
 .bio {
@@ -106,8 +104,6 @@ header {
 h1 {
     font-size: 400%;
     margin: 0;
-    /* -webkit-text-stroke:1px ;
-    -webkit-text-stroke-color: rgb(172, 172, 172); */
 }
 
 h2 {
@@ -173,20 +169,10 @@ strong {
 
 .social {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     column-gap: 4em;
-    /* border: 1px solid #4d4d4d; */
-    /* padding: 2em; */
-    /* background-color: #4d4d4d; */
     height: 80px;
 
 }
-
-/* .social:hover {
-    background-color: aliceblue;
-    transition: all 0.5s ease-in-out;
-} */
 
 .content2 {
     display: none;
@@ -246,22 +232,6 @@ strong {
     .fa-solid{
         color: #f7f7f7;
     }
-    /* .content2 table {
-        position: absolute;
-        bottom: 0;
-        background-color: #000000;
-    }
-
-    .content2 table td {
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-top: 1em;
-    }
-
-    .content2 table a:hover {
-        color: #f18e8e;
-        font-weight: bold;
-    } */
 
     .main {
         padding-left: 10%;
@@ -283,7 +253,6 @@ strong {
         margin-top: 2%;
         float: none;
         width: 100%;
-        /* text-align: center; */
     }
 
     .intro {
@@ -303,9 +272,6 @@ strong {
     
     }
 
-    /* .intro img{
-        float: right;
-    } */
 }
 
 @media screen and (max-width:932px) {
@@ -326,7 +292,6 @@ strong {
     .main img {
         height: 60vh;
         max-width: 100%;
-        /* padding-right: 2%; */
 
     }
 
@@ -354,7 +319,6 @@ strong {
 
     .navbar .logo {
         position: absolute;
-        /* top: 50px; */
         left: 4%;
         transition: all .50s ease;
     }
@@ -387,7 +351,6 @@ strong {
 
     .nav-links.mobile-menu {
         margin-left: 0;
-        /* transition: all .50s ease; */
 
     }
 
@@ -396,14 +359,11 @@ strong {
         flex-direction: column;
         display: flex;
         align-items: center;
-        /* transition: all .50s ease; */
     }
 
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 1.2em;
-
-        /* transition: all .50s ease; */
 
     }
 
@@ -413,9 +373,6 @@ strong {
     }
 }
 
-/* @media screen and (max-width:960px) {
-    
-} */
 @media screen and (max-width:780px) {
     .intro table {
         position: relative;
