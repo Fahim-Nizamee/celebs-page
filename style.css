@@ -228,7 +228,7 @@ strong {
         display:flex;
         justify-content: center;
         align-items: center;
-        height: 90px;
+        height: 8%;
         background-color: #4d4d4d;
     }
     .content2 a{
@@ -236,7 +236,7 @@ strong {
         width: 100%;
     }
     .content2 a i{
-        font-size: 40px;
+        font-size: 200%;
     }
     .content2 a{
         display: flex;
