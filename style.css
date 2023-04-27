@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.main {
+    padding-left: 10%;
+    padding-right: 25%;
+    background: transparent;
+    height: 90vh;
+    overflow-y: hidden;
+    overflow-y: auto;
+}
+
+.main img {
+    max-height: 45vh;
+    max-width: 75vw;
+}
+
+.navbar {
+    /* position: fixed; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #4d4d4d;
+    height: 4rem;
+    z-index: 100000;
+
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+.navbar a:hover{
+    color: #f18e8e;
+}
+
+.navbar .logo {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+.navbar .logo:hover{
+    color: #f18e8e;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+
+}
+
+.navbar .nav-links ul li.active a {
+    color: #ffffff;
+    font-weight: 600;
+
+}
+.navbar .nav-links ul li.active a:hover{
+    color: #f18e8e;
+
+}
+
+.navbar .menu-btn {
+    display: none;
+    position: absolute;
+    right: 50px;
+    /* top: 50px; */
+    width: 35px;
+}
+.bio {
+    height: 100vh;
+
+}
+
+h1 {
+    font-size: 400%;
+    margin: 0;
+    /* -webkit-text-stroke:1px ;
+    -webkit-text-stroke-color: rgb(172, 172, 172); */
+}
+
+h2 {
+    font-size: 250%;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.content {
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+    margin-top: 2%;
+    border: 1px solid #4d4d4d4d;
+    width: 15vw;
+    padding: 3%;
+}
+
+/* #ed3c57 */
+.content li {
+    font-size: 18px;
+    margin-bottom: 2%;
+
+}
+
+.content li a:hover {
+    color: #f18e8e;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    line-height: 2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intro table {
+    position: relative;
+    float: right;
+}
+
+td {
+    padding-bottom: 1em;
+}
+
+strong {
+    padding-right: 2rem;
+}
+
+#personal-info table {
+    width: 100%;
+}
+
+#career img {
+    float: left;
+    margin-right: 2em;
+    margin-top: 1%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4em;
+    border: 1px solid #4d4d4d;
+    padding: 2em;
+    background-color: #4d4d4d;
+    height: 40px;
+
+}
+
+.social:hover {
+    background-color: aliceblue;
+    transition: all 0.5s ease-in-out;
+}
+
+.content2 {
+    display: none;
+}
+.fa{
+    font-size: 40px;
+    transition: all 0.5s ease-in-out;
+}
+.fa:hover{
+    font-size: 45px;
+    transition: all 0.5s ease-in-out;
+}
+.body a{
+    color: #1560d1;
+}
+
+@media screen and (max-width:1200px) {
+    .content {
+        display: none;
+    }
+
+    .content li {
+        font-weight: bold;
+        font-size: 15px;
+        transition: all .50s ease;
+
+    }
+
+    .content2 {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content2 table {
+        position: sticky;
+        top: 0;
+    }
+
+    .content2 table td {
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-top: 1em;
+    }
+
+    .content2 table a:hover {
+        color: #f18e8e;
+        font-weight: bold;
+    }
+
+    .main {
+        padding-left: 10%;
+        padding-right: 10%;
+        transition: all .50s ease;
+
+    }
+
+    .navbar {
+        padding-left: 10%;
+        padding-right: 10%;
+        transition: all .50s ease;
+    }
+
+}
+
+@media screen and (max-width:1035px) {
+    .intro table {
+        margin-top: 2%;
+        float: none;
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    .intro {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* .intro img{
+        float: right;
+    } */
+}
+
+@media screen and (max-width:932px) {
+    .career {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #career img {
+        float: none;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 2%;
+    }
+
+    .main img {
+        height: 60vh;
+        max-width: 100%;
+        /* padding-right: 2%; */
+
+    }
+
+    h1 {
+        font-size: 250%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    .main {
+        padding-right: 4%;
+        padding-left: 4%;
+        transition: all .50s ease;
+    }
+
+    .navbar {
+
+        padding: 0;
+        height: 10vh;
+        transition: all .50s ease;
+
+    }
+
+    .navbar .logo {
+        position: absolute;
+        /* top: 50px; */
+        left: 4%;
+        transition: all .50s ease;
+    }
+
+    .navbar .menu-btn {
+        display: block;
+        right: 4%;
+        transition: all .50s ease;
+        z-index: 2;
+
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #000000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(7px);
+        margin-left: -100%;
+        transition: all .50s ease;
+        z-index: 1;
+
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+        /* transition: all .50s ease; */
+
+    }
+
+    .nav-links ul {
+
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        /* transition: all .50s ease; */
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+
+        /* transition: all .50s ease; */
+
+    }
+
+    .navbar .nav-links ul li a {
+        color: #ffffff;
+        font-weight: bold;
+    }
+}
+
+/* @media screen and (max-width:960px) {
+    
+} */
+@media screen and (max-width:780px) {
+    .intro table {
+        position: relative;
+        float: none;
+    }
+}
