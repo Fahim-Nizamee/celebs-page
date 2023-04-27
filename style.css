@@ -173,36 +173,42 @@ strong {
 
 .social {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     column-gap: 4em;
-    border: 1px solid #4d4d4d;
-    padding: 2em;
-    background-color: #4d4d4d;
-    height: 40px;
+    /* border: 1px solid #4d4d4d; */
+    /* padding: 2em; */
+    /* background-color: #4d4d4d; */
+    height: 80px;
 
 }
 
-.social:hover {
+/* .social:hover {
     background-color: aliceblue;
     transition: all 0.5s ease-in-out;
-}
+} */
 
 .content2 {
     display: none;
 }
 .fa{
     font-size: 40px;
-    transition: all 0.5s ease-in-out;
+}
+.fa-brands{
+    font-size: 40px;
+}
+.fa-brands:hover{
+    padding-top: 0.1em;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 .fa:hover{
-    font-size: 45px;
-    transition: all 0.5s ease-in-out;
+    padding-top: 0.1em;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    
 }
 .body a{
     color: #1560d1;
 }
-
 @media screen and (max-width:1200px) {
     .content {
         display: none;
@@ -216,14 +222,34 @@ strong {
     }
 
     .content2 {
-        display: block;
-        display: flex;
-        justify-content: center;
-    }
-
-    .content2 table {
         position: sticky;
         top: 0;
+        bottom: 0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        background-color: #4d4d4d;
+    }
+    .content2 a{
+        height: 100%;
+        width: 100%;
+    }
+    .content2 a i{
+        font-size: 40px;
+    }
+    .content2 a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fa-solid{
+        color: #f7f7f7;
+    }
+    /* .content2 table {
+        position: absolute;
+        bottom: 0;
+        background-color: #000000;
     }
 
     .content2 table td {
@@ -235,7 +261,7 @@ strong {
     .content2 table a:hover {
         color: #f18e8e;
         font-weight: bold;
-    }
+    } */
 
     .main {
         padding-left: 10%;
@@ -267,6 +293,14 @@ strong {
         justify-content: center;
         align-items: center;
 
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 4em;
+        height: 80px;
+    
     }
 
     /* .intro img{
@@ -388,3 +422,4 @@ strong {
         float: none;
     }
 }
+
