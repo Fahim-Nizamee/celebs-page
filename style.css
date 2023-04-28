@@ -238,6 +238,7 @@ label {
 	box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
 	cursor: pointer;
 	transition: 0.3s;
+    z-index: 3;
 }
 label:after {
 	content: "";
@@ -332,9 +333,9 @@ input:checked + label svg.moon {
         height: 100%;
         width: 100%;
     }
-    .content2 a i{
+    /* .content2 a i{
         font-size: 200%;
-    }
+    } */
     .content2 a{
         display: flex;
         justify-content: center;
@@ -342,8 +343,8 @@ input:checked + label svg.moon {
     }
     .fa-solid{
         color: #f7f7f7;
+        font-size: 160%;
     }
-
     .main {
         padding-left: 10%;
         padding-right: 10%;
@@ -499,6 +500,14 @@ input:checked + label svg.moon {
 }
 
 
+.footer{
+    background-color:  #6b29ed;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
 
-
+}
 

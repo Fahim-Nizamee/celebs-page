@@ -94,3 +94,4 @@ function check()
         document.body.classList.remove('dark-theme')
     }
 }
+
