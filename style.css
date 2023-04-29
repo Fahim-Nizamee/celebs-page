@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --primary_color--: #262626;
+    --primary_color--: #212529;
     --secondary_color--: #ffffff;
 }
 
 .dark-theme {
     --primary_color--: #ffffff;
-    --secondary_color--: #262626;
+    --secondary_color--: #212529;
 }
 
 * {
@@ -35,10 +35,9 @@ header {
 }
 
 .main {
-    padding-left: 10%;
-    padding-right: 25%;
+
     background: transparent;
-    height: 90vh;
+    height: 93vh;
     overflow-y: hidden;
     overflow-y: auto;
 
@@ -48,6 +47,11 @@ header {
 .main img {
     max-height: 45vh;
     max-width: 75vw;
+}
+
+.main2 {
+    padding-left: 10%;
+    padding-right: 25%;
 }
 
 .navbar {
@@ -325,16 +329,32 @@ input:checked+label svg.sun {
 input:checked+label svg.moon {
     fill: #fff;
 }
-
+.footer0{
+    background-color: #000000;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    align-items: center;
+    /* height: 20vh; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.ft{
+    width: 100%;
+}
+.ft ul{
+    padding-left: 50px;
+}
 /* ========== */
 .footer {
-    background-color: #6b29ed;
-    height: 10%;
+    background-color: #212529;
+    height: 6%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #fff;
 
 }
 
@@ -356,6 +376,7 @@ input:checked+label svg.moon {
     }
 
     .content2 {
+
         position: sticky;
         top: 0;
         bottom: 0;
@@ -366,18 +387,17 @@ input:checked+label svg.moon {
         background-color: #3a2372;
     }
 
-    .content2 a {
-        height: 100%;
-        width: 100%;
-    }
-
     /* .content2 a i{
         font-size: 200%;
     } */
     .content2 a {
+        padding-top: 10px;
+        padding-bottom: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
+        width: 100%;
     }
 
     .fa-solid {
@@ -385,7 +405,7 @@ input:checked+label svg.moon {
         font-size: 160%;
     }
 
-    .main {
+    .main2 {
         padding-left: 10%;
         padding-right: 10%;
         transition: all .50s ease;
@@ -432,13 +452,26 @@ input:checked+label svg.moon {
         display: block;
         transition: all .50s ease;
     } */
-
+    .ft{
+        /* text-align: justify; */
+        width: 70%;
+    }
+    .ft span{
+        line-height: 5px;
+    }
+    .ft ul{
+        padding-left:20px;
+    }
+    .footer0{
+        display: block;
+    }
     .footer {
         display: none;
     }
 
     .footer2 {
-        background-color: #6b29ed;
+        bottom: 0;
+        background-color: #212529;
         padding-top: 4px;
         padding-bottom: 4px;
         display: flex;
@@ -446,12 +479,13 @@ input:checked+label svg.moon {
         align-items: center;
         justify-content: center;
     }
-    .footer2 span{
+
+    .footer2 span {
         color: white;
     }
 
     label {
-        top: 17px;
+        top: 13px;
     }
 
     .career {
@@ -482,7 +516,7 @@ input:checked+label svg.moon {
         font-size: 150%;
     }
 
-    .main {
+    .main2 {
         padding-right: 4%;
         padding-left: 4%;
         transition: all .50s ease;
@@ -491,7 +525,7 @@ input:checked+label svg.moon {
     .navbar {
 
         padding: 0;
-        height: 4em;
+        height: 3.5em;
         transition: all .50s ease;
 
     }
@@ -504,6 +538,7 @@ input:checked+label svg.moon {
 
     .navbar .menu-btn {
         display: block;
+        top: 13px;
         right: 4%;
         transition: all .50s ease;
         z-index: 2;
